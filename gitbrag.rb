@@ -5,20 +5,20 @@
 class Gitbrag < Formula
   desc "A terminal tool that outputs git stats for local git repositories"
   homepage "https://github.com/radulucut/gitbrag"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     on_intel do
-      url "https://github.com/radulucut/gitbrag/releases/download/v0.1.1/gitbrag_Darwin_x86_64.tar.gz"
-      sha256 "91ac031e4826f3247f563f452fabe6ad82aba30beeeaa68cb9baf3adb17c55de"
+      url "https://github.com/radulucut/gitbrag/releases/download/v0.1.2/gitbrag_Darwin_x86_64.tar.gz"
+      sha256 "7549aa002fb40f2741de57125bc704e46315bc76270e3688c4366b91265efeca"
 
       def install
         bin.install "gitbrag"
       end
     end
     on_arm do
-      url "https://github.com/radulucut/gitbrag/releases/download/v0.1.1/gitbrag_Darwin_arm64.tar.gz"
-      sha256 "07a31ca74e14c1783d4dfabd4f3aae5d12eb9c0b21bbc84741e2ed61abf67b9c"
+      url "https://github.com/radulucut/gitbrag/releases/download/v0.1.2/gitbrag_Darwin_arm64.tar.gz"
+      sha256 "4cfbb5ef82a47663f0e192230aa732178310ca1f885e3eb6b29e74ac6b13abe9"
 
       def install
         bin.install "gitbrag"
@@ -29,8 +29,8 @@ class Gitbrag < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/radulucut/gitbrag/releases/download/v0.1.1/gitbrag_Linux_x86_64.tar.gz"
-        sha256 "4d611dc1a0f6e1ce9dafb19de072b609933d97e6f60c232956f2cfe9105a31ac"
+        url "https://github.com/radulucut/gitbrag/releases/download/v0.1.2/gitbrag_Linux_x86_64.tar.gz"
+        sha256 "b7042055c3e6517a6fe1824f83137654b0e308fed468c9cad2b12d65b3975534"
 
         def install
           bin.install "gitbrag"
@@ -39,8 +39,8 @@ class Gitbrag < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/radulucut/gitbrag/releases/download/v0.1.1/gitbrag_Linux_arm64.tar.gz"
-        sha256 "62dc8cfe67f36578141f04eb6512a1d9246dacb9c8a9174646e9769981dd4bdb"
+        url "https://github.com/radulucut/gitbrag/releases/download/v0.1.2/gitbrag_Linux_arm64.tar.gz"
+        sha256 "78fcb9efc3bde121e40378cecf78fc7ffe08f1fe02aab4ecdc1f75ace3fb92a1"
 
         def install
           bin.install "gitbrag"
